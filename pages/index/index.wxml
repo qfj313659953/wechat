@@ -1,0 +1,91 @@
+<view class="head-nav">
+    <view class="head-img">
+        <image src="https://m.boxuegu.com/_nuxt/img/logo.4ba874d.png" />
+    </view>
+    <view class="iconfont icon-sousuo"></view>
+</view>
+<!-- banner条 -->
+<view class="banner">
+    <image src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/15f453eb41ab4cb783dca5ccbd3d3f03.jpg" />
+</view>
+<!-- 导航条 -->
+<view class="nav">
+    <block wx:for="{{nav}}" wx:key="nav">
+        <view class="nav-item">
+            <view class="nav-item-img">
+                <image src="{{item.img}}" />
+            </view>
+            <view class="nav-item-text">{{item.txt}}</view>
+        </view>
+    </block>
+</view>
+<!-- 就业班 -->
+<view class="list-1">
+    <view class="list-head">
+        <view class="list-head-left">就业课</view>
+        <view>更多</view>
+    </view>
+    <view class="list-body">
+        <block wx:for="{{list1}}" wx:key="list1">
+            <view class="list-body-item">
+                <view class="list-item-img">
+                    <image src="{{item.img}}"></image>
+                </view>
+                <view class="list-item">
+                    <view class="item-1">{{item.title}}</view>
+                    <view class="item-2">{{item.cont}}</view>
+                    <view class="item-3">
+                        <view>{{item.people}}</view>
+                        <view class="red">{{item.price}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+<!-- 推荐课程 -->
+<view class="list-1">
+    <view class="list-head">
+        <view class="list-head-left">推荐课程</view>
+        <view>更多</view>
+    </view>
+    <view class="list-body2">
+        <block wx:for="{{list2}}" wx:key="list2">
+            <view class="list-item2">
+                <view class="item2-img">
+                    <image src="{{item.img}}" />
+                </view>
+                <view class="item2-txt">
+                    <view class="item2-title">{{item.title}}</view>
+                    <view class="item-3">
+                        <view>{{item.people}}</view>
+                        <view class="red">{{item.price}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+    <!-- 免费课 -->
+    <view class="list-1">
+        <view class="list-head">
+            <view class="list-head-left">免费课</view>
+            <view>更多</view>
+        </view>
+        <view class="list-body2">
+            <block wx:for="{{list3}}" wx:key="list3">
+                <view class="list-item2">
+                    <view class="item2-img">
+                        <image id="item3-img" src="{{item.img}}" />
+                    </view>
+                    <view class="item2-txt item3-txt">
+                        <view class="item2-title">{{item.title}}</view>
+                        <view class="item-3">
+                            <view>{{item.people}}</view>
+                            <view class="red">免费</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

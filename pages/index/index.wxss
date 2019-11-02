@@ -1,0 +1,130 @@
+/* pages/index/index.wxss */
+@import '/public/fonts/search.wxss';
+.head-nav {
+    height: 100rpx;
+    background:#fff;
+    display: flex;
+    padding:0 30rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-img image {
+    width: 182rpx;
+    height: 52rpx;
+}
+.icon-sousuo {
+    color:#ccc;
+}
+.banner image {
+    width: 800rpx;
+    height: 340rpx;
+}
+/*导航条*/
+.nav {
+    width: 100%;
+    height: 175.2rpx;
+    display: flex;
+    justify-content: space-around;
+    padding:30rpx 0;
+    font-size:12px;
+    color:#333;
+    background: #fff;
+    
+}
+.nav-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item-img image{
+    width: 74rpx;
+    height: 74rpx;
+}
+/* 就业班 */
+.list-1 {
+    margin-top:20rpx;
+    padding:30rpx;
+    background: #fff;
+}
+.list-head {
+    display: flex;
+    justify-content: space-between;
+    font-size:16px;
+    margin-bottom: 30rpx;
+}
+.list-head .list-head-left::before {
+    content:'';
+    width: 5rpx;
+    height: 30rpx;
+    background: #38adff;
+    display: inline-block;
+    margin-right: 10rpx;
+}
+.list-body-item {
+    display: flex;
+    margin-bottom: 40rpx;
+}
+.list-item-img {
+    margin-right: 30rpx;
+}
+.list-item-img image {
+    width: 356rpx;
+    height: 230rpx;
+    border-radius: 12rpx;
+}
+.list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-1 {
+    font-size: 15px;
+    color: #333;
+}
+.item-2 {
+    font-size: 12px;
+    color: #999;
+}
+.item-3 {
+    display: flex;
+    justify-content: space-between;
+    font-size:12px;
+    color:#666;
+}
+.red {
+    color: #ff544c;
+}
+/* 推荐课程 */
+.list-body2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list-item2 {
+    margin-bottom:30rpx;
+    display: flex;
+    flex-direction: column;
+}
+.item2-img image {
+    width: 335rpx;
+    height: 230rpx;
+    border-radius: 12rpx;
+}
+.item2-txt {
+    width: 335rpx;   
+}
+.item2-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+#item3-img {
+    width: 310rpx;
+    height: 230rpx;
+    border-radius: 12rpx;
+}
+.item3-txt {
+    width: 310rpx;   
+}
+
